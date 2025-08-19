@@ -38,7 +38,7 @@ const Card: React.FC<CardProps> = ({
         ${hover ? hoverShadowClasses[shadow] : ''} 
         ${hover ? 'hover:-translate-y-2' : ''}
         ${interactive ? 'cursor-pointer hover:scale-105' : ''}
-        ${isHovered && hover ? 'ring-2 ring-green-100' : ''}
+        ${isHovered && hover ? 'ring-2 ring-gray-100' : ''}
         ${className}
       `}
       onMouseEnter={() => setIsHovered(true)}
@@ -54,7 +54,7 @@ const Card: React.FC<CardProps> = ({
         <div className={`absolute top-0 right-0 w-16 h-16 opacity-10 transition-opacity duration-300 ${
           isHovered ? 'opacity-20' : 'opacity-10'
         }`}>
-          <svg viewBox="0 0 100 100" fill="currentColor" className="w-full h-full text-green-500">
+          <svg viewBox="0 0 100 100" fill="currentColor" className="w-full h-full text-gray-500">
             <circle cx="80" cy="20" r="15"/>
             <circle cx="60" cy="40" r="8"/>
             <circle cx="40" cy="20" r="5"/>

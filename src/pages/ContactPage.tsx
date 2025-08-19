@@ -27,7 +27,7 @@ const ContactPage: React.FC = () => {
     },
     {
             title: 'Eco-Friendly',
-      desc: 'Sustainable solutions for a greener future'
+      desc: 'Sustainable solutions for a grayer future'
     }
   ];
 
@@ -40,30 +40,30 @@ const ContactPage: React.FC = () => {
         <section className="relative bg-slate-900 text-white py-20 overflow-hidden">
           {/* Animated Background Elements */}
           <div className="absolute inset-0">
-            <div className="absolute top-10 left-10 w-20 h-20 bg-blue-500 rounded-full opacity-20 animate-pulse"></div>
-            <div className="absolute top-32 right-20 w-16 h-16 bg-green-500 rounded-full opacity-20 animate-bounce"></div>
+            <div className="absolute top-10 left-10 w-20 h-20 bg-gray-500 rounded-full opacity-20 animate-pulse"></div>
+            <div className="absolute top-32 right-20 w-16 h-16 bg-gray-500 rounded-full opacity-20 animate-bounce"></div>
             <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-purple-500 rounded-full opacity-20 animate-pulse delay-1000"></div>
             <div className="absolute bottom-32 right-1/3 w-12 h-12 bg-yellow-500 rounded-full opacity-20 animate-bounce delay-500"></div>
           </div>
           
           <div className={`container mx-auto px-4 text-center relative z-10 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <div className="inline-flex items-center bg-green-600 px-4 py-2 rounded-full text-sm font-medium mb-6 animate-pulse">
-              <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-ping"></span>
+            <div className="inline-flex items-center bg-gray-600 px-4 py-2 rounded-full text-sm font-medium mb-6 animate-pulse">
+              <span className="w-2 h-2 bg-gray-400 rounded-full mr-2 animate-ping"></span>
               Available 24/7
             </div>
             
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-green-500 to-green-400 animate-pulse">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-400 via-gray-500 to-gray-400 animate-pulse">
               Contact Us
             </h1>
             
             <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 leading-relaxed">
               Have a question or need a quote? Our team is ready to assist you with all your 
-              <span className="text-blue-400 font-semibold"> EV solutions </span> needs.
+              <span className="text-gray-400 font-semibold"> EV solutions </span> needs.
             </p>
             
             {/* Animated Call-to-Action */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="group bg-green-600 hover:bg-green-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+              <button className="group bg-gray-600 hover:bg-gray-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                 <span className="flex items-center">
                   Get Started Today
                   <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,7 +86,7 @@ const ContactPage: React.FC = () => {
                 <div
                   key={index}
                   className={`text-center p-8 bg-white rounded-2xl transform transition-all duration-700 hover:scale-105 hover:shadow-2xl ${
-                    activeSection === index ? 'ring-4 ring-blue-200 shadow-xl' : 'shadow-lg'
+                    activeSection === index ? 'ring-4 ring-gray-200 shadow-xl' : 'shadow-lg'
                   }`}
                   style={{
                     animationDelay: `${index * 200}ms`,
@@ -110,8 +110,8 @@ const ContactPage: React.FC = () => {
               <div className={`transform transition-all duration-800 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
                 <div className="bg-white p-8 rounded-3xl shadow-2xl border border-gray-100">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4">
-                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mr-4">
+                      <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </div>
@@ -126,8 +126,8 @@ const ContactPage: React.FC = () => {
                   <div className="relative">
                     <ContactForm />
                     {/* Decorative Elements */}
-                    <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-200 rounded-full opacity-50 animate-pulse"></div>
-                    <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-green-200 rounded-full opacity-50 animate-pulse delay-700"></div>
+                    <div className="absolute -top-4 -right-4 w-8 h-8 bg-gray-200 rounded-full opacity-50 animate-pulse"></div>
+                    <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gray-200 rounded-full opacity-50 animate-pulse delay-700"></div>
                   </div>
                 </div>
               </div>
@@ -138,8 +138,8 @@ const ContactPage: React.FC = () => {
                   {/* Contact Information */}
                   <div className="bg-white p-8 rounded-3xl shadow-2xl border border-gray-100">
                     <div className="flex items-center mb-6">
-                      <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4">
-                        <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mr-4">
+                        <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
                       </div>
@@ -163,7 +163,7 @@ const ContactPage: React.FC = () => {
                     
                     <div className="relative h-80 bg-gray-100 rounded-2xl overflow-hidden group cursor-pointer">
                       {/* Interactive Map Placeholder */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 opacity-10"></div>
+                      <div className="absolute inset-0 bg-gradient-to-br from-gray-400 via-purple-500 to-pink-500 opacity-10"></div>
                       <div className="w-full h-full flex flex-col items-center justify-center text-gray-600 group-hover:scale-105 transition-transform duration-300">
                         <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mb-4 animate-bounce">
                           <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -183,18 +183,18 @@ const ContactPage: React.FC = () => {
                       </div>
                       
                       {/* Hover Effect Overlay */}
-                      <div className="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                      <div className="absolute inset-0 bg-gray-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
                     </div>
                     
                     {/* Quick Action Buttons */}
                     <div className="flex flex-col sm:flex-row gap-3 mt-6">
-                      <button className="flex-1 bg-blue-50 hover:bg-blue-100 text-blue-700 px-6 py-3 rounded-xl font-medium transition-all duration-200 flex items-center justify-center group">
+                      <button className="flex-1 bg-gray-50 hover:bg-gray-100 text-gray-700 px-6 py-3 rounded-xl font-medium transition-all duration-200 flex items-center justify-center group">
                         <svg className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 4m0 13V4m-6 3l6-3" />
                         </svg>
                         Get Directions
                       </button>
-                      <button className="flex-1 bg-green-50 hover:bg-green-100 text-green-700 px-6 py-3 rounded-xl font-medium transition-all duration-200 flex items-center justify-center group">
+                      <button className="flex-1 bg-gray-50 hover:bg-gray-100 text-gray-700 px-6 py-3 rounded-xl font-medium transition-all duration-200 flex items-center justify-center group">
                         <svg className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
@@ -219,7 +219,7 @@ const ContactPage: React.FC = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button className="group bg-green-600 hover:bg-green-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                <button className="group bg-gray-600 hover:bg-gray-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
                   <span className="flex items-center">
                     Schedule Consultation
                     <svg className="w-5 h-5 ml-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

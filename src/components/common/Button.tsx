@@ -42,21 +42,21 @@ const Button: React.FC<ButtonProps> = ({
   
   const variantClasses = {
     primary: `
-      bg-green-600 hover:bg-green-700 text-white 
-      focus:ring-green-300 shadow-lg hover:shadow-xl
+      bg-gray-600 hover:bg-gray-700 text-white 
+      focus:ring-gray-300 shadow-lg hover:shadow-xl
       before:absolute before:inset-0 before:bg-white before:opacity-0 
       before:transition-opacity before:duration-200 hover:before:opacity-10
     `,
     secondary: `
-      bg-blue-600 hover:bg-blue-700 text-white 
-      focus:ring-blue-300 shadow-lg hover:shadow-xl
+      bg-gray-600 hover:bg-gray-700 text-white 
+      focus:ring-gray-300 shadow-lg hover:shadow-xl
       before:absolute before:inset-0 before:bg-white before:opacity-0 
       before:transition-opacity before:duration-200 hover:before:opacity-10
     `,
     outline: `
-      border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white 
-      focus:ring-green-300 bg-transparent hover:shadow-lg
-      before:absolute before:inset-0 before:bg-green-600 before:opacity-0 
+      border-2 border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white 
+      focus:ring-gray-300 bg-transparent hover:shadow-lg
+      before:absolute before:inset-0 before:bg-gray-600 before:opacity-0 
       before:transition-opacity before:duration-200 hover:before:opacity-100
     `,
   };
@@ -114,7 +114,7 @@ const Button: React.FC<ButtonProps> = ({
         <span className={`
           absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 
           transition-opacity duration-300 pointer-events-none
-          ${variant === 'primary' ? 'shadow-green-500/50' : 'shadow-blue-500/50'}
+          ${variant === 'primary' ? 'shadow-gray-500/50' : 'shadow-gray-500/50'}
           shadow-2xl blur-xl
         `}></span>
       )}

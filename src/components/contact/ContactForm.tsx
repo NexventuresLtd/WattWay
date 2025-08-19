@@ -49,7 +49,7 @@ const ContactForm: React.FC = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-gray-500 focus:border-gray-500"
           />
         </div>
         
@@ -64,7 +64,7 @@ const ContactForm: React.FC = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-gray-500 focus:border-gray-500"
           />
         </div>
       </div>
@@ -79,7 +79,7 @@ const ContactForm: React.FC = () => {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-gray-500 focus:border-gray-500"
         />
       </div>
       
@@ -92,7 +92,7 @@ const ContactForm: React.FC = () => {
           name="service"
           value={formData.service}
           onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-gray-500 focus:border-gray-500"
         >
           <option value="">Select a service</option>
           <option value="installation">EV Charger Installation</option>
@@ -112,7 +112,7 @@ const ContactForm: React.FC = () => {
           rows={4}
           value={formData.message}
           onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-gray-500 focus:border-gray-500"
         ></textarea>
       </div>
       

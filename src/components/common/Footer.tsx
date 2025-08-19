@@ -38,10 +38,10 @@ const Footer: React.FC = () => {
   ];
 
   const socialLinks = [
-    { name: 'Twitter', url: '#', icon: 'M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z', color: 'bg-green-600  hover:bg-green-600' },
-    { name: 'LinkedIn', url: '#', icon: 'M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z M4 2a2 2 0 11-4 0 2 2 0 014 0z', color: 'bg-green-600  hover:bg-green-600' },
-    { name: 'Instagram', url: '#', icon: 'M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01 M6.5 2h11A4.5 4.5 0 0122 6.5v11a4.5 4.5 0 01-4.5 4.5h-11A4.5 4.5 0 012 17.5v-11A4.5 4.5 0 016.5 2z', color: 'bg-green-600  hover:bg-green-600' },
-    { name: 'YouTube', url: '#', icon: 'M23 12s0-3.85-.46-5.58c-.25-.95-.98-1.69-1.94-1.94C18.88 4 12 4 12 4s-6.88 0-8.6.48c-.96.25-1.69.99-1.94 1.94C1 8.15 1 12 1 12s0 3.85.46 5.58c.25.96.98 1.69 1.94 1.94C5.12 20 12 20 12 20s6.88 0 8.6-.48c.96-.25 1.69-.98 1.94-1.94C23 15.85 23 12 23 12zM10 15.5V8.5l6 3.5-6 3.5z', color: 'bg-green-600  hover:bg-green-600' }
+    { name: 'Twitter', url: '#', icon: 'M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z', color: 'bg-gray-600  hover:bg-gray-600' },
+    { name: 'LinkedIn', url: '#', icon: 'M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z M4 2a2 2 0 11-4 0 2 2 0 014 0z', color: 'bg-gray-600  hover:bg-gray-600' },
+    { name: 'Instagram', url: '#', icon: 'M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01 M6.5 2h11A4.5 4.5 0 0122 6.5v11a4.5 4.5 0 01-4.5 4.5h-11A4.5 4.5 0 012 17.5v-11A4.5 4.5 0 016.5 2z', color: 'bg-gray-600  hover:bg-gray-600' },
+    { name: 'YouTube', url: '#', icon: 'M23 12s0-3.85-.46-5.58c-.25-.95-.98-1.69-1.94-1.94C18.88 4 12 4 12 4s-6.88 0-8.6.48c-.96.25-1.69.99-1.94 1.94C1 8.15 1 12 1 12s0 3.85.46 5.58c.25.96.98 1.69 1.94 1.94C5.12 20 12 20 12 20s6.88 0 8.6-.48c.96-.25 1.69-.98 1.94-1.94C23 15.85 23 12 23 12zM10 15.5V8.5l6 3.5-6 3.5z', color: 'bg-gray-600  hover:bg-gray-600' }
   ];
 
   const chargingStations = [
@@ -55,8 +55,8 @@ const Footer: React.FC = () => {
     <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-10 w-20 h-20 bg-green-400 rounded-full animate-pulse"></div>
-        <div className="absolute top-32 right-20 w-16 h-16 bg-green-400 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-10 left-10 w-20 h-20 bg-gray-400 rounded-full animate-pulse"></div>
+        <div className="absolute top-32 right-20 w-16 h-16 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
         <div className="absolute bottom-20 left-32 w-12 h-12 bg-yellow-400 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
         <div className="absolute bottom-40 right-10 w-24 h-24 bg-purple-400 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
       </div>
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
         <div className="mb-12 p-6 bg-slate-800/50 rounded-2xl backdrop-blur-sm border border-slate-700/50">
           <div className="flex items-center justify-between mb-6">
             <h3 className="text-xl font-bold flex items-center">
-              <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse mr-3"></div>
+              <div className="w-3 h-3 bg-gray-500 rounded-full animate-pulse mr-3"></div>
               Live Station Status
             </h3>
             <div className="text-sm text-gray-400">
@@ -91,12 +91,12 @@ const Footer: React.FC = () => {
                 <div className="flex items-center justify-between mb-2">
                   <h5 className="font-medium text-sm">{station.location}</h5>
                   <div className={`w-2 h-2 rounded-full ${
-                    station.status === 'online' ? 'bg-green-500 animate-pulse' : 
+                    station.status === 'online' ? 'bg-gray-500 animate-pulse' : 
                     station.status === 'maintenance' ? 'bg-yellow-500 animate-pulse' : 'bg-red-500'
                   }`}></div>
                 </div>
                 <div className="text-xs text-gray-400 capitalize">{station.status}</div>
-                <div className="text-lg font-bold text-green-400">{station.count} <span className="text-xs font-normal">stations</span></div>
+                <div className="text-lg font-bold text-gray-400">{station.count} <span className="text-xs font-normal">stations</span></div>
               </div>
             ))}
           </div>
@@ -107,15 +107,15 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center space-x-3 group">
               <div className="relative">
-                <div className="w-14 h-14 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 ">
+                <div className="w-14 h-14 bg-gradient-to-br from-gray-400 to-gray-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 ">
                   <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <div className="absolute -inset-1 bg-gradient-to-r from-green-400 to-green-600 rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-gray-400 to-gray-600 rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity"></div>
               </div>
               <div>
-                <h3 className="text-3xl font-bold bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent">
+                <h3 className="text-3xl font-bold bg-gradient-to-r from-gray-400 to-gray-500 bg-clip-text text-transparent">
                   WattWay
                 </h3>
                 <p className="text-xs text-gray-400">Powering Tomorrow's Journey</p>
@@ -145,7 +145,7 @@ const Footer: React.FC = () => {
                 ))}
               </div>
               {hoveredSocial && (
-                <p className="text-sm text-green-400 animate-pulse">Follow us on {hoveredSocial}</p>
+                <p className="text-sm text-gray-400 animate-pulse">Follow us on {hoveredSocial}</p>
               )}
             </div>
           </div>
@@ -153,7 +153,7 @@ const Footer: React.FC = () => {
           {/* Quick Links - Enhanced with icons */}
           <div>
             <h4 className="font-bold text-lg mb-6 flex items-center">
-              <span className="w-3 h-3 bg-green-500 rounded-full mr-3 animate-pulse"></span>
+              <span className="w-3 h-3 bg-gray-500 rounded-full mr-3 animate-pulse"></span>
               Quick Links
             </h4>
             <ul className="space-y-4">
@@ -163,7 +163,7 @@ const Footer: React.FC = () => {
                     to={link.path} 
                     className="text-gray-300 hover:text-white transition-all duration-300 flex items-center space-x-3 hover:translate-x-2 group p-2 rounded-lg hover:bg-slate-800/50"
                   >
-                    <svg className="w-4 h-4 text-green-400 group-hover:text-green-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-gray-400 group-hover:text-gray-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={link.icon} />
                     </svg>
                     <span className="group-hover:font-medium transition-all">{link.name}</span>
@@ -176,7 +176,7 @@ const Footer: React.FC = () => {
           {/* Support Links - Enhanced with icons */}
           <div>
             <h4 className="font-bold text-lg mb-6 flex items-center">
-              <span className="w-3 h-3 bg-green-500 rounded-full mr-3 animate-pulse"></span>
+              <span className="w-3 h-3 bg-gray-500 rounded-full mr-3 animate-pulse"></span>
               Support
             </h4>
             <ul className="space-y-4">
@@ -186,7 +186,7 @@ const Footer: React.FC = () => {
                     to={link.path} 
                     className="text-gray-300 hover:text-white transition-all duration-300 flex items-center space-x-3 hover:translate-x-2 group p-2 rounded-lg hover:bg-slate-800/50"
                   >
-                    <svg className="w-4 h-4 text-green-400 group-hover:text-green-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-gray-400 group-hover:text-gray-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={link.icon} />
                     </svg>
                     <span className="group-hover:font-medium transition-all">{link.name}</span>
@@ -235,7 +235,7 @@ const Footer: React.FC = () => {
                   </svg>
                   <div>
                     <p className="text-gray-300 font-medium">Email Us</p>
-                    <a href="mailto:info@wattway.com" className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm">
+                    <a href="mailto:info@wattway.com" className="text-gray-300 hover:text-gray-400 transition-colors duration-200 text-sm">
                       info@wattway.com
                     </a>
                   </div>
@@ -254,12 +254,12 @@ const Footer: React.FC = () => {
               </p>
               <div className="flex items-center space-x-2">
                 <div className="flex items-center space-x-1">
-                  <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                  <span className="w-2 h-2 bg-gray-500 rounded-full animate-pulse"></span>
                   <span className="text-gray-400 text-xs">Service Status: Online</span>
                 </div>
                 <span className="text-gray-600">•</span>
                 <div className="flex items-center space-x-1">
-                  <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                  <span className="w-2 h-2 bg-gray-500 rounded-full animate-pulse"></span>
                   <span className="text-gray-400 text-xs">API: Operational</span>
                 </div>
               </div>
@@ -284,13 +284,13 @@ const Footer: React.FC = () => {
       {isVisible && (
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-full hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center group"
+          className="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-br from-gray-500 to-gray-600 text-white rounded-full hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center group"
           aria-label="Back to top"
         >
           <svg className="w-6 h-6 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
           </svg>
-          <div className="absolute -inset-1 bg-gradient-to-r from-green-400 to-green-600 rounded-full blur opacity-30 group-hover:opacity-50 transition-opacity"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-gray-400 to-gray-600 rounded-full blur opacity-30 group-hover:opacity-50 transition-opacity"></div>
         </button>
       )}
     </footer>

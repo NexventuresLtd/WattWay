@@ -11,7 +11,7 @@ const WhyChooseUs: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
             {WHY_CHOOSE_US.map((item, index) => (
               <div key={index} className="flex items-start">
-                <svg className="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-gray-500 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <p className="text-gray-700">{item}</p>

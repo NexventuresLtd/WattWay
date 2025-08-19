@@ -71,7 +71,7 @@ const ProductsPage: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-slate-900">
-              Our <span className="text-green-600">Products</span>
+              Our <span className="text-gray-600">Products</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 mb-8 leading-relaxed">
               High-quality EV chargers for every need — from compact home units to powerful commercial stations.
@@ -92,7 +92,7 @@ const ProductsPage: React.FC = () => {
                 variants={{itemVariants}}
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">{stat.number}</div>
+                <div className="text-3xl md:text-4xl font-bold text-gray-600 mb-2">{stat.number}</div>
                 <div className="text-slate-600 font-medium">{stat.label}</div>
               </motion.div>
             ))}
@@ -116,7 +116,7 @@ const ProductsPage: React.FC = () => {
                 <input
                   type="text"
                   placeholder="Search products..."
-                  className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300"
+                  className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all duration-300"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -137,7 +137,7 @@ const ProductsPage: React.FC = () => {
                 {/* View Mode Toggle */}
                 <div className="flex border border-slate-300 rounded-xl overflow-hidden">
                   <motion.button
-                    className={`p-3 ${viewMode === 'grid' ? 'bg-green-600 text-white' : 'bg-white text-slate-600 hover:bg-slate-50'} transition-colors duration-300`}
+                    className={`p-3 ${viewMode === 'grid' ? 'bg-gray-600 text-white' : 'bg-white text-slate-600 hover:bg-slate-50'} transition-colors duration-300`}
                     onClick={() => setViewMode('grid')}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
@@ -145,7 +145,7 @@ const ProductsPage: React.FC = () => {
                     <Grid className="w-5 h-5" />
                   </motion.button>
                   <motion.button
-                    className={`p-3 ${viewMode === 'list' ? 'bg-green-600 text-white' : 'bg-white text-slate-600 hover:bg-slate-50'} transition-colors duration-300`}
+                    className={`p-3 ${viewMode === 'list' ? 'bg-gray-600 text-white' : 'bg-white text-slate-600 hover:bg-slate-50'} transition-colors duration-300`}
                     onClick={() => setViewMode('list')}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
@@ -184,7 +184,7 @@ const ProductsPage: React.FC = () => {
             </h2>
             {searchTerm && (
               <p className="text-slate-600">
-                for "<span className="font-medium text-green-600">{searchTerm}</span>"
+                for "<span className="font-medium text-gray-600">{searchTerm}</span>"
               </p>
             )}
           </motion.div>
@@ -233,7 +233,7 @@ const ProductsPage: React.FC = () => {
                     Try adjusting your search or filter criteria
                   </p>
                   <motion.button
-                    className="px-6 py-3 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-colors duration-300"
+                    className="px-6 py-3 bg-gray-600 text-white rounded-xl hover:bg-gray-700 transition-colors duration-300"
                     onClick={() => {
                       setSearchTerm('');
                       setFilter('all');
@@ -258,7 +258,7 @@ const ProductsPage: React.FC = () => {
               transition={{ duration: 0.6 }}
             >
               <motion.button 
-                className="group inline-flex items-center px-8 py-4 border-2 border-green-600 text-green-600 font-semibold rounded-xl hover:bg-green-600 hover:text-white transition-all duration-300"
+                className="group inline-flex items-center px-8 py-4 border-2 border-gray-600 text-gray-600 font-semibold rounded-xl hover:bg-gray-600 hover:text-white transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -290,7 +290,7 @@ const ProductsPage: React.FC = () => {
               Our experts can help you find the perfect EV charging solution for your specific needs.
             </p>
             <motion.button 
-              className="group inline-flex items-center px-8 py-4 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transform hover:scale-105 transition-all duration-300"
+              className="group inline-flex items-center px-8 py-4 bg-gray-600 text-white font-semibold rounded-xl hover:bg-gray-700 transform hover:scale-105 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

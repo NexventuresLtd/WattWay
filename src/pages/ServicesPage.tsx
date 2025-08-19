@@ -78,7 +78,7 @@ const ServicesPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Our <span className="text-blue-600">Services</span>
+              Our <span className="text-gray-600">Services</span>
             </motion.h1>
             <motion.p 
               className="text-xl md:text-2xl text-slate-600 mb-8 leading-relaxed"
@@ -93,7 +93,7 @@ const ServicesPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <button className="group inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transform hover:scale-105 transition-all duration-300">
+              <button className="group inline-flex items-center px-8 py-4 bg-gray-600 text-white font-semibold rounded-xl hover:bg-gray-700 transform hover:scale-105 transition-all duration-300">
                 Get Started Today
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
@@ -115,14 +115,14 @@ const ServicesPage: React.FC = () => {
             {features.map((feature, index) => (
               <motion.div
                 key={index}
-                className="group p-6 bg-white border border-slate-200 rounded-xl hover:border-blue-300 transition-all duration-300 hover:transform hover:scale-105"
+                className="group p-6 bg-white border border-slate-200 rounded-xl hover:border-gray-300 transition-all duration-300 hover:transform hover:scale-105"
                 variants={{itemVariants}}
                 whileHover={{ 
                   y: -5,
                   transition: { duration: 0.3 }
                 }}
               >
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4 text-gray-600 group-hover:bg-gray-600 group-hover:text-white transition-all duration-300">
                   {feature.icon}
                 </div>
                 <h3 className="text-lg font-semibold mb-2 text-slate-900">{feature.title}</h3>
