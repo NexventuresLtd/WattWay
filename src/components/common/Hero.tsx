@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
             className="w-full h-full object-cover"
             poster="../../../public/poster-image.jpg"
           >
-            <source src="../../../public/Electric car connecting to charger station. 4k 3d animation - U3d Indie Game Developer (1080p, h264).mp4" type="video/mp4" />
+            <source src="../../../public/Electric.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -105,7 +105,7 @@ const Hero: React.FC = () => {
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             WattWay, Powering the{' '}
-            <span className="text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 bg-clip-text animate-gradient-x inline-block min-w-fit">
+            <span className="text-transparent bg-gradient-to-r from-blue-900 via-purple-500 to-green-700 bg-clip-text animate-gradient-x inline-block min-w-fit">
               <span className="animate-pulse">{words[currentWord]}</span>
             </span>
             <br />of your drive
