@@ -105,7 +105,7 @@ const Hero: React.FC = () => {
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             WattWay, Powering the{' '}
-            <span className="text-transparent bg-gradient-to-r from-blue-900 via-purple-500 to-green-700 bg-clip-text animate-gradient-x inline-block min-w-fit">
+            <span className="text-transparent bg-gradient-to-r from-blue-900 via-purple-500 to-green-00 bg-clip-text animate-gradient-x inline-block min-w-fit">
               <span className="animate-pulse">{words[currentWord]}</span>
             </span>
             <br />of your drive
