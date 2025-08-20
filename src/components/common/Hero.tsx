@@ -9,11 +9,14 @@ const Hero: React.FC = () => {
 
   useEffect(() => {
     setIsVisible(true);
-    const interval = setInterval(() => {
+
+    const interval: ReturnType<typeof setInterval> = setInterval(() => {
       setCurrentWord((prev) => (prev + 1) % words.length);
     }, 3000);
+
     return () => clearInterval(interval);
   }, []);
+
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
