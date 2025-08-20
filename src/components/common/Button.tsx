@@ -42,13 +42,13 @@ const Button: React.FC<ButtonProps> = ({
   
   const variantClasses = {
     primary: `
-      bg-gray-600 hover:bg-gray-700 text-white 
+      bg-green-600 hover:bg-green-700 text-white 
       focus:ring-gray-300 shadow-lg hover:shadow-xl
       before:absolute before:inset-0 before:bg-white before:opacity-0 
       before:transition-opacity before:duration-200 hover:before:opacity-10
     `,
     secondary: `
-      bg-gray-600 hover:bg-gray-700 text-white 
+      bg-green-600 hover:bg-green-700 text-white 
       focus:ring-gray-300 shadow-lg hover:shadow-xl
       before:absolute before:inset-0 before:bg-white before:opacity-0 
       before:transition-opacity before:duration-200 hover:before:opacity-10

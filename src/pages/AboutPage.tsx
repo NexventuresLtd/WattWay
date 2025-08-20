@@ -32,7 +32,7 @@ const AboutPage: React.FC = () => {
         </section>
         
         {/* Enhanced Our Story Section */}
-        <section className="py-20 bg-white relative">
+        <section className="py-20 bg-gray-900 relative">
           <div className="absolute inset-0 bg-dot-pattern opacity-5"></div>
           
           <div className="container mx-auto px-4 relative z-10">
@@ -110,7 +110,7 @@ const AboutPage: React.FC = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
-              <div className="bg-white p-8 rounded-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 border-t-4 border-gray-600">
+              <div className="bg-gray-900 p-8 rounded-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 border-t-4 border-gray-600">
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
                     <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -124,7 +124,7 @@ const AboutPage: React.FC = () => {
                 </p>
               </div>
               
-              <div className="bg-white p-8 rounded-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 border-t-4 border-gray-600">
+              <div className="bg-gray-900 p-8 rounded-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 border-t-4 border-gray-600">
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
                     <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -143,7 +143,7 @@ const AboutPage: React.FC = () => {
         </section>
         
         {/* Enhanced Team Section */}
-        <section className="py-20 bg-white relative">
+        <section className="py-20 bg-gray-900 relative">
           <div className="absolute inset-0 bg-circuit-pattern opacity-5"></div>
           
           <div className="container mx-auto px-4 text-center relative z-10">
@@ -181,7 +181,7 @@ const AboutPage: React.FC = () => {
               ].map((member, index) => (
                 <div 
                   key={index} 
-                  className="group bg-white p-8 rounded-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 border border-gray-100"
+                  className="group bg-gray-900 p-8 rounded-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 border border-gray-100"
                   style={{
                     animationDelay: `${index * 200}ms`,
                     animation: 'slideInUp 0.8s ease-out forwards'

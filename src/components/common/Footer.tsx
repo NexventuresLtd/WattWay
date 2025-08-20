@@ -284,7 +284,7 @@ const Footer: React.FC = () => {
       {isVisible && (
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-br from-gray-500 to-gray-600 text-white rounded-full hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center group"
+          className="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-br from-green-600 to-green-600 text-white rounded-full hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center group"
           aria-label="Back to top"
         >
           <svg className="w-6 h-6 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
