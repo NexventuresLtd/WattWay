@@ -43,7 +43,7 @@ const Header: React.FC = () => {
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${
       scrolled 
-        ? 'bg-white/65 backdrop-blur-md shadow-lg border-b border-gray-100' 
+        ? 'bg-white/65 backdrop-blur-lg  border-b border-gray-100' 
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
@@ -53,8 +53,8 @@ const Header: React.FC = () => {
             <div className="relative">
               <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center group-hover:scale-110 transform transition-all duration-200 ${
                 scrolled 
-                  ? 'bg-gray-500 group-hover:bg-gray-600' 
-                  : 'bg-white/20 backdrop-blur-sm group-hover:bg-white/30'
+                  ? 'bg-green-500 group-hover:bg-green-500' 
+                  : 'bg-green-500 backdrop-blur-sm group-hover:bg-green-500'
               }`}>
                 <svg className={`w-5 h-5 sm:w-6 sm:h-6 group-hover:animate-pulse transition-colors duration-200 ${
                   scrolled ? 'text-white' : 'text-white'
@@ -65,7 +65,7 @@ const Header: React.FC = () => {
               <div className="absolute -top-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 bg-yellow-400 rounded-full animate-ping opacity-75"></div>
             </div>
             <span className={`ml-2 sm:ml-3 text-xl sm:text-2xl font-bold group-hover:opacity-80 transition-all duration-200 ${
-              scrolled ? 'text-gray-900' : 'text-white drop-shadow-lg'
+              scrolled ? 'text-green-500' : 'text-green-500'
             }`}>
               WattWay
             </span>
@@ -96,7 +96,7 @@ const Header: React.FC = () => {
               variant="primary" 
               size="sm" 
               className={`ml-4 group hover:scale-105 transition-all duration-200 ${
-                scrolled ? '' : 'bg-gray-800 text-gray-900 hover:bg-gray-100 shadow-lg'
+                scrolled ? 'bg-green-500 text-gray-900 hover:bg-green-500 shadow-lg' : 'bg-green-500 text-gray-900 hover:bg-green-500 shadow-lg'
               }`}
             >
               <span className="flex items-center">
