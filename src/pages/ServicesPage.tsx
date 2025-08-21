@@ -64,7 +64,7 @@ const ServicesPage: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80')] bg-cover bg-center opacity-5"></div>
+        <div className="absolute inset-0 bg-gray-900"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
             className="text-center max-w-4xl mx-auto"
@@ -73,7 +73,7 @@ const ServicesPage: React.FC = () => {
             animate="visible"
           >
             <motion.h1
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-slate-800 leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-slate-200 leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -81,7 +81,7 @@ const ServicesPage: React.FC = () => {
               Our <span className="text-green-600">Services</span>
             </motion.h1>
             <motion.p
-              className="text-lg sm:text-xl lg:text-2xl text-slate-600 mb-8 sm:mb-10 leading-relaxed px-4 sm:px-0"
+              className="text-lg sm:text-xl lg:text-2xl text-slate-400 mb-8 sm:mb-10 leading-relaxed px-4 sm:px-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -95,7 +95,9 @@ const ServicesPage: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <button className="group inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl focus:ring-4 focus:ring-green-600 focus:outline-none">
+                <a href="/contact" className="flex items-center gap-2">
                 Get Started Today
+                </a>
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
             </motion.div>
@@ -116,14 +118,14 @@ const ServicesPage: React.FC = () => {
             {features.map((feature, index) => (
               <motion.div
                 key={index}
-                className="group p-6 sm:p-8 bg-white border border-slate-200 rounded-2xl hover:border-emerald-200 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105"
+                className="group p-6 sm:p-8 bg-white border border-slate-200 rounded-2xl hover:border-green-200 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105"
                 variants={itemVariants}
                 whileHover={{
                   y: -5,
                   transition: { duration: 0.3 },
                 }}
               >
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-slate-100 rounded-xl flex items-center justify-center mb-4 sm:mb-6 text-slate-700 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-slate-100 rounded-xl flex items-center justify-center mb-4 sm:mb-6 text-slate-700 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
                   {feature.icon}
                 </div>
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-slate-800">
@@ -206,17 +208,19 @@ const ServicesPage: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-              Ready to Get <span className="text-emerald-400">Started?</span>
+              Ready to Get <span className="text-green-600">Started?</span>
             </h2>
             <p className="text-lg sm:text-xl lg:text-2xl text-slate-300 mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
               Contact us today to discuss your EV charging needs and get a custom solution.
             </p>
             <motion.button
-              className="group inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-slate-900 font-semibold rounded-xl hover:bg-emerald-50 hover:shadow-2xl transform hover:scale-105 transition-all duration-300 focus:ring-4 focus:ring-emerald-300 focus:outline-none"
+              className="group inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-green-600 text-slate-900 font-semibold rounded-xl hover:bg-green-300 hover:shadow-2xl transform hover:scale-105 transition-all duration-300 focus:ring-4 focus:ring-green-300 focus:outline-none"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
+              <a href="/contact" className="flex items-center gap-2">
               Contact Us Now
+              </a>
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </motion.button>
           </motion.div>

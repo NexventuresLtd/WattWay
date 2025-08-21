@@ -39,7 +39,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
             {service.process && (
               <div className="mb-8">
                 <h3 className="text-lg sm:text-xl font-semibold text-slate-800 mb-4 flex items-center">
-                  <span className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
                   Process
                 </h3>
                 <div className="bg-slate-50 rounded-xl p-4 sm:p-6">
@@ -63,14 +63,14 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
             {service.features && (
               <div className="mb-8">
                 <h3 className="text-lg sm:text-xl font-semibold text-slate-800 mb-4 flex items-center">
-                  <span className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
                   We Provide Guidance On
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {service.features.map((feature: string, index: number) => (
                     <div key={index} className="flex items-start">
                       <svg 
-                        className="flex-shrink-0 w-5 h-5 text-emerald-600 mr-3 mt-0.5" 
+                        className="flex-shrink-0 w-5 h-5 text-green-600 mr-3 mt-0.5" 
                         fill="currentColor" 
                         viewBox="0 0 20 20"
                       >
@@ -95,9 +95,14 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
                 variant="primary"
                 className="w-full sm:w-auto bg-green-600 hover:bg-green-600 text-white font-semibold px-8 py-3 rounded-xl transition-all duration-200 hover:shadow-lg focus:ring-4 focus:ring-green-600 focus:outline-none"
               >
+                <a href='/services' className="flex items-center justify-center gap-2">
+                <svg className="w-4 h-4 mr-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
                 {service.id === 'selling' ? 'View Chargers' :
-                  service.id === 'consultation' ? 'Get Started' :
-                 service.id === 'design' ? 'Contact Us' : 'Book Now'}
+                service.id === 'consultation' ? 'Get Started' :
+                service.id === 'design' ? 'Contact Us' : 'Book Now'}
+                </a>
               </Button>
             </div>
           </div>

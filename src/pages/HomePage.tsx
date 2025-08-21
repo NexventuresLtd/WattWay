@@ -38,7 +38,7 @@ const HomePage: React.FC = () => {
         <Hero />
         
         {/* Enhanced Stats Section */}
-        <section className={`py-16 bg-gradient-to-r from-gray-50 to-gray-50 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        <section className={`py-16 bg-gradient-to-r from-gray-800 to-gray-700 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => {
@@ -52,10 +52,10 @@ const HomePage: React.FC = () => {
                     <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-gray-500 to-gray-600 rounded-full mb-4 group-hover:shadow-lg transition-shadow">
                       <IconComponent className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-3xl font-bold text-gray-800 mb-2 group-hover:text-gray-600 transition-colors">
+                    <h3 className="text-3xl font-bold text-gray-100 mb-2 group-hover:text-gray-100 transition-colors">
                       {stat.number}
                     </h3>
-                    <p className="text-gray-600 font-medium">{stat.label}</p>
+                    <p className="text-gray-100 font-medium">{stat.label}</p>
                   </div>
                 );
               })}
@@ -71,11 +71,11 @@ const HomePage: React.FC = () => {
         <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">          
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-800 mb-4">
-                What Our <span className="text-gray-600">Clients Say</span>
+              <h2 className="text-4xl font-bold text-gray-600 mb-4">
+                What Our <span className="text-green-600">Clients Say</span>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-gray-400 to-gray-600 mx-auto rounded-full"></div>
-              <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+              <p className="text-gray-800 mt-4 max-w-2xl mx-auto">
                 Don't just take our word for it. Here's what our satisfied customers have to say about our EV solutions.
               </p>
             </div>
@@ -115,7 +115,7 @@ const HomePage: React.FC = () => {
               </div>
               
               <h3 className="text-4xl md:text-5xl font-bold mb-6 animate-fadeIn">
-                Ready for <span className="text-gray-300">EV Solutions?</span>
+                Ready for <span className="text-green-600">EV Solutions?</span>
               </h3>
               
               <p className="text-xl md:text-2xl mb-8 text-gray-100 leading-relaxed">
@@ -124,25 +124,33 @@ const HomePage: React.FC = () => {
 
               {/* Contact Info */}
               <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
-                <div className="flex items-center gap-3 text-gray-800 bg-gray-900 bg-opacity-10 px-6 py-3 rounded-full backdrop-blur-sm">
-                  <Phone className="w-5 h-5 text-gray-800" />
-                  <a href="tel:+250787570975" className="font-semibold text-gray-800 hover:text-gray-300 transition-colors">
+                <div className="flex items-center gap-3 text-gray-100 bg-green-600 bg-opacity-10 px-6 py-3 rounded-full backdrop-blur-sm">
+                  <Phone className="w-5 h-5 text-gray-100" />
+                  <a href="tel:+250787570975" className="font-semibold text-gray-100 hover:text-gray-100 transition-colors">
                     +250 787 570 975
                   </a>
                 </div>
-                <div className="flex items-center gap-3 text-gray-800 bg-gray-900 bg-opacity-10 px-6 py-3 rounded-full backdrop-blur-sm">
+                <div className="flex items-center gap-3 text-gray-100 bg-green-600 bg-opacity-10 px-6 py-3 rounded-full backdrop-blur-sm">
+                  <a href="mailto:info@enebula.rw" className="flex items-center gap-2 text-gray-100 hover:text-gray-100 transition-colors">
                   <Mail className="w-5 h-5" />
-                  <span className="font-semibold">info@evsolutions.rw</span>
+                  <span className="font-semibold">info@enebula.rw</span>
+                </a>
                 </div>
               </div>
               
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <button className="bg-gray-900 text-gray-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-50 hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl">
+                <button className="bg-green-600 text-gray-100 px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <a href="tel:+250787570975" className="flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
                   Get Free Quote
+                  </a>
                 </button>
-                <button className="border-2 border-white px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-900 hover:text-gray-600 transform hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                <button className="border-2 border-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 hover:text-gray-100 transform hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <a href="/contact" className="flex items-center gap-2">
+                  <Mail className="w-5 h-5" />
                   Schedule Consultation
+                  </a>
                 </button>
               </div>
 
@@ -150,15 +158,15 @@ const HomePage: React.FC = () => {
               <div className="flex justify-center items-center gap-8 mt-12 pt-8 border-t border-gray-500 border-opacity-30">
                 <div className="text-center">
                   <div className="text-2xl font-bold">5★</div>
-                  <div className="text-sm text-gray-200">Rated Service</div>
+                  <div className="text-sm text-gray-100">Rated Service</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold">24/7</div>
-                  <div className="text-sm text-gray-200">Support</div>
+                  <div className="text-sm text-gray-100">Support</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold">100%</div>
-                  <div className="text-sm text-gray-200">Satisfaction</div>
+                  <div className="text-sm text-gray-100">Satisfaction</div>
                 </div>
               </div>
             </div>

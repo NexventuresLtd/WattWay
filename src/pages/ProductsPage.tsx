@@ -15,8 +15,7 @@ const ProductsPage: React.FC = () => {
 
   const filteredProducts = PRODUCTS.filter(product => {
     const matchesFilter = filter === 'all' || product.type === filter;
-    const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         product.description?.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase()) || product.description?.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesFilter && matchesSearch;
   });
 
@@ -62,7 +61,7 @@ const ProductsPage: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-5"></div>
+        <div className="absolute inset-0 bg-gray-900"></div>
         <div className="container mx-auto px-4 relative">
           <motion.div 
             className="text-center max-w-4xl mx-auto"
@@ -70,10 +69,10 @@ const ProductsPage: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-slate-900">
-              Our <span className="text-gray-600">Products</span>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-slate-200">
+              Our <span className="text-green-600">Products</span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-600 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-slate-400 mb-8 leading-relaxed">
               High-quality EV chargers for every need — from compact home units to powerful commercial stations.
             </p>
           </motion.div>
@@ -92,8 +91,8 @@ const ProductsPage: React.FC = () => {
                 variants={{itemVariants}}
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="text-3xl md:text-4xl font-bold text-gray-600 mb-2">{stat.number}</div>
-                <div className="text-slate-600 font-medium">{stat.label}</div>
+                <div className="text-3xl md:text-4xl font-bold text-gray-300 mb-2">{stat.number}</div>
+                <div className="text-slate-300 font-medium">{stat.label}</div>
               </motion.div>
             ))}
           </motion.div>
@@ -137,7 +136,7 @@ const ProductsPage: React.FC = () => {
                 {/* View Mode Toggle */}
                 <div className="flex border border-slate-300 rounded-xl overflow-hidden">
                   <motion.button
-                    className={`p-3 ${viewMode === 'grid' ? 'bg-gray-600 text-white' : 'bg-white text-slate-600 hover:bg-slate-50'} transition-colors duration-300`}
+                    className={`p-3 ${viewMode === 'grid' ? 'bg-white text-white' : 'bg-white text-slate-600 hover:bg-slate-50'} transition-colors duration-300`}
                     onClick={() => setViewMode('grid')}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
@@ -145,7 +144,7 @@ const ProductsPage: React.FC = () => {
                     <Grid className="w-5 h-5" />
                   </motion.button>
                   <motion.button
-                    className={`p-3 ${viewMode === 'list' ? 'bg-gray-600 text-white' : 'bg-white text-slate-600 hover:bg-slate-50'} transition-colors duration-300`}
+                    className={`p-3 ${viewMode === 'list' ? 'bg-white-600 text-white' : 'bg-white text-slate-600 hover:bg-slate-50'} transition-colors duration-300`}
                     onClick={() => setViewMode('list')}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
@@ -233,7 +232,7 @@ const ProductsPage: React.FC = () => {
                     Try adjusting your search or filter criteria
                   </p>
                   <motion.button
-                    className="px-6 py-3 bg-gray-600 text-white rounded-xl hover:bg-gray-700 transition-colors duration-300"
+                    className="px-6 py-3 bg-white-600 text-white rounded-xl hover:bg-white-700 transition-colors duration-300"
                     onClick={() => {
                       setSearchTerm('');
                       setFilter('all');
@@ -258,11 +257,11 @@ const ProductsPage: React.FC = () => {
               transition={{ duration: 0.6 }}
             >
               <motion.button 
-                className="group inline-flex items-center px-8 py-4 border-2 border-gray-600 text-gray-600 font-semibold rounded-xl hover:bg-gray-600 hover:text-white transition-all duration-300"
+                className="group inline-flex items-center px-8 py-4 border-2 border-gray-600 text-gray-600 font-semibold rounded-xl hover:bg-green-600 hover:text-white transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                View All Products
+                Get Started
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </motion.button>
             </motion.div>
@@ -290,7 +289,7 @@ const ProductsPage: React.FC = () => {
               Our experts can help you find the perfect EV charging solution for your specific needs.
             </p>
             <motion.button 
-              className="group inline-flex items-center px-8 py-4 bg-gray-600 text-white font-semibold rounded-xl hover:bg-gray-700 transform hover:scale-105 transition-all duration-300"
+              className="group inline-flex items-center px-8 py-4 bg-white-600 text-white font-semibold rounded-xl hover:bg-white-700 transform hover:scale-105 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

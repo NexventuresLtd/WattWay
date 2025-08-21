@@ -29,7 +29,7 @@ const FAQPage: React.FC = () => {
             <div className="animate-fade-in-up">
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 Frequently Asked
-                <span className="block text-emerald-400">Questions</span>
+                <span className="block text-green-400">Questions</span>
               </h1>
               <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed">
                 Find answers to common questions about our products, services, and EV charging solutions.
@@ -49,7 +49,7 @@ const FAQPage: React.FC = () => {
               </div>
               <input
                 type="text"
-                className="w-full pl-12 pr-4 py-4 text-lg border-2 border-gray-200 rounded-2xl focus:outline-none focus:border-emerald-500 transition-all duration-300 bg-gray-50 focus:bg-white"
+                className="w-full pl-12 pr-4 py-4 text-lg border-2 border-gray-200 rounded-2xl focus:outline-none focus:border-green-500 transition-all duration-300 bg-gray-50 focus:bg-white"
                 placeholder="Search questions..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
@@ -65,20 +65,20 @@ const FAQPage: React.FC = () => {
               {filteredFAQs.map((faq, index) => (
                 <div 
                   key={faq.id} 
-                  className="bg-white rounded-2xl border border-gray-200 hover:border-emerald-300 transition-all duration-300 hover:shadow-xl group"
+                  className="bg-white rounded-2xl border border-gray-200 hover:border-green-300 transition-all duration-300 hover:shadow-xl group"
                 >
                   <button
                     className="w-full text-left p-6 focus:outline-none"
                     onClick={() => toggleFAQ(index)}
                   >
                     <div className="flex justify-between items-center">
-                      <h3 className="font-semibold text-lg text-gray-900 group-hover:text-emerald-600 transition-colors pr-8">
+                      <h3 className="font-semibold text-lg text-gray-900 group-hover:text-green-600 transition-colors pr-8">
                         {faq.question}
                       </h3>
                       <div className="flex-shrink-0">
-                        <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center group-hover:bg-emerald-200 transition-colors">
+                        <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center group-hover:bg-green-200 transition-colors">
                           <svg
-                            className={`w-5 h-5 text-emerald-600 transform transition-transform duration-300 ${
+                            className={`w-5 h-5 text-green-600 transform transition-transform duration-300 ${
                               activeIndex === index ? 'rotate-180' : ''
                             }`}
                             fill="none"
@@ -121,12 +121,12 @@ const FAQPage: React.FC = () => {
             )}
 
             {/* Contact Support Card */}
-            <div className="mt-16 bg-emerald-50 border border-emerald-200 rounded-3xl p-8 text-center relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-100 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-emerald-200 rounded-full translate-y-12 -translate-x-12 opacity-30"></div>
+            <div className="mt-16 bg-green-50 border border-green-200 rounded-3xl p-8 text-center relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-green-100 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-green-200 rounded-full translate-y-12 -translate-x-12 opacity-30"></div>
               
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 11-9.75 9.75A9.75 9.75 0 0112 2.25z" />
                   </svg>
@@ -138,14 +138,14 @@ const FAQPage: React.FC = () => {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <button className="bg-emerald-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-emerald-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center space-x-2">
+                  <button className="bg-green-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-green-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center space-x-2">
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                     </svg>
                     <span>Contact Support</span>
                   </button>
                   
-                  <button className="border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-600 hover:text-white transition-all duration-300 flex items-center space-x-2">
+                  <button className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-xl font-semibold hover:bg-green-600 hover:text-white transition-all duration-300 flex items-center space-x-2">
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>

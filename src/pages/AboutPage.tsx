@@ -16,13 +16,13 @@ const AboutPage: React.FC = () => {
           <div className="container mx-auto px-4 text-center relative z-10">
             <div className="max-w-4xl mx-auto transform transition-all duration-1000 hover:scale-105">
               <div className="mb-8">
-                <svg className="w-20 h-20 mx-auto mb-6 text-gray-500 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-20 h-20 mx-auto mb-6 text-green-500 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
               
               <h1 className="text-5xl font-bold mb-6 tracking-tight animate-fade-in-up">
-                About WattWay
+                About ENebula
               </h1>
               <p className="text-xl max-w-3xl mx-auto leading-relaxed animate-fade-in-up delay-200">
                 Powering the future of transportation with accessible, sustainable EV solutions across East Africa.
@@ -32,18 +32,18 @@ const AboutPage: React.FC = () => {
         </section>
         
         {/* Enhanced Our Story Section */}
-        <section className="py-20 bg-gray-900 relative">
+        <section className="py-20 bg-white relative">
           <div className="absolute inset-0 bg-dot-pattern opacity-5"></div>
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold mb-6 text-gray-900 tracking-tight">Our Story</h2>
+                <h2 className="text-4xl font-bold mb-6 text-green-600 tracking-tight">Our Story</h2>
                 <div className="w-24 h-1 bg-gray-600 mx-auto mb-8 transform transition-all duration-500 hover:w-32"></div>
               </div>
               
               <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div className="space-y-6 text-gray-700 leading-relaxed">
+                <div className="space-y-6 text-gray-600 leading-relaxed">
                   <div className="transform transition-all duration-700 hover:scale-105 hover:-translate-x-2">
                     <div className="flex items-start space-x-4">
                       <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -52,7 +52,7 @@ const AboutPage: React.FC = () => {
                         </svg>
                       </div>
                       <p>
-                        At WattWay, we believe the future of transportation is electric — and accessible to everyone.
+                        At ENebula, we believe the future of transportation is electric — and accessible to everyone.
                       </p>
                     </div>
                   </div>
@@ -79,7 +79,7 @@ const AboutPage: React.FC = () => {
                         </svg>
                       </div>
                       <p>
-                        Founded in 2020, WattWay has grown from a small startup to a leading provider of EV infrastructure solutions in East Africa. Our team of certified professionals brings together expertise in electrical engineering, renewable energy, and transportation planning.
+                        Founded in 2020, ENebula has grown from a small startup to a leading provider of EV infrastructure solutions in East Africa. Our team of certified professionals brings together expertise in electrical engineering, renewable energy, and transportation planning.
                       </p>
                     </div>
                   </div>
@@ -93,7 +93,7 @@ const AboutPage: React.FC = () => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gray-600 rounded-full flex items-center justify-center animate-pulse">
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-white rounded-full flex items-center justify-center animate-pulse">
                     <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
@@ -110,29 +110,29 @@ const AboutPage: React.FC = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
-              <div className="bg-gray-900 p-8 rounded-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 border-t-4 border-gray-600">
+              <div className="bg-white p-8 rounded-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 border-t-4 border-gray-600">
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-                    <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                     </svg>
                   </div>
-                  <h2 className="text-3xl font-bold mb-4 text-gray-900">Our Mission</h2>
+                  <h2 className="text-3xl font-bold mb-4 text-green-600">Our Mission</h2>
                 </div>
                 <p className="text-gray-700 leading-relaxed text-lg">
                   To make EV adoption and charging infrastructure simple, affordable, and future-ready. We strive to remove barriers to electric mobility by providing end-to-end solutions tailored to each client's needs.
                 </p>
               </div>
               
-              <div className="bg-gray-900 p-8 rounded-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 border-t-4 border-gray-600">
+              <div className="bg-white p-8 rounded-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 border-t-4 border-gray-600">
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-                    <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                     </svg>
                   </div>
-                  <h2 className="text-3xl font-bold mb-4 text-gray-900">Our Vision</h2>
+                  <h2 className="text-3xl font-bold mb-4 text-green-600">Our Vision</h2>
                 </div>
                 <p className="text-gray-700 leading-relaxed text-lg">
                   A connected network of EV solutions that keeps Africa moving sustainably. We envision a continent where electric mobility is the norm, supported by reliable, renewable-powered charging infrastructure.
@@ -143,15 +143,15 @@ const AboutPage: React.FC = () => {
         </section>
         
         {/* Enhanced Team Section */}
-        <section className="py-20 bg-gray-900 relative">
+        <section className="py-20 bg-white relative">
           <div className="absolute inset-0 bg-circuit-pattern opacity-5"></div>
           
           <div className="container mx-auto px-4 text-center relative z-10">
             <div className="mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-gray-900 tracking-tight">Meet Our Team</h2>
+              <h2 className="text-4xl font-bold mb-6 text-green-600 tracking-tight">Meet Our Team</h2>
               <div className="w-24 h-1 bg-gray-600 mx-auto mb-8 transform transition-all duration-500 hover:w-32"></div>
               <p className="text-gray-700 max-w-3xl mx-auto mb-12 text-lg leading-relaxed">
-                WattWay is powered by a diverse team of EV specialists, engineers, and sustainability experts committed to advancing clean transportation across Africa.
+                ENebula is powered by a diverse team of EV specialists, engineers, and sustainability experts committed to advancing clean transportation across Africa.
               </p>
             </div>
             
@@ -181,7 +181,7 @@ const AboutPage: React.FC = () => {
               ].map((member, index) => (
                 <div 
                   key={index} 
-                  className="group bg-gray-900 p-8 rounded-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 border border-gray-100"
+                  className="group bg-white p-8 rounded-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-4 border border-gray-100"
                   style={{
                     animationDelay: `${index * 200}ms`,
                     animation: 'slideInUp 0.8s ease-out forwards'
@@ -202,13 +202,13 @@ const AboutPage: React.FC = () => {
                     </div>
                   </div>
                   
-                  <h3 className="text-xl font-bold mb-2 text-gray-900 group-hover:text-gray-600 transition-colors duration-300">
+                  <h3 className="text-xl font-bold mb-2 text-green-600 group-hover:text-green-600 transition-colors duration-300">
                     {member.name}
                   </h3>
-                  <p className="text-gray-600 font-semibold mb-3 text-sm uppercase tracking-wider">
+                  <p className="text-gray-800 font-semibold mb-3 text-sm uppercase tracking-wider">
                     {member.role}
                   </p>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-500 leading-relaxed">
                     {member.bio}
                   </p>
                 </div>

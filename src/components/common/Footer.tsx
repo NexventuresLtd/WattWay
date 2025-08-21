@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-3xl font-bold bg-gradient-to-r from-gray-400 to-gray-500 bg-clip-text text-transparent">
-                  WattWay
+                  ENebula
                 </h3>
                 <p className="text-xs text-gray-400">Powering Tomorrow's Journey</p>
               </div>
@@ -235,8 +235,8 @@ const Footer: React.FC = () => {
                   </svg>
                   <div>
                     <p className="text-gray-300 font-medium">Email Us</p>
-                    <a href="mailto:info@wattway.com" className="text-gray-300 hover:text-gray-400 transition-colors duration-200 text-sm">
-                      info@wattway.com
+                    <a href="mailto:info@enebula.rw" className="text-gray-300 hover:text-gray-400 transition-colors duration-200 text-sm">
+                      info@enebula.rw
                     </a>
                   </div>
                 </div>
@@ -250,7 +250,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
               <p className="text-gray-400 text-sm">
-                &copy; {new Date().getFullYear()} WattWay. All rights reserved.
+                &copy; {new Date().getFullYear()} ENebula. All rights reserved.
               </p>
               <div className="flex items-center space-x-2">
                 <div className="flex items-center space-x-1">

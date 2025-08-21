@@ -22,7 +22,7 @@ const ContactInfo: React.FC = () => {
           </svg>
           <div>
             <h4 className="font-medium">Email</h4>
-            <p className="text-gray-600">info@wattway.com</p>
+            <p className="text-gray-600">info@enebula.rw</p>
           </div>
         </div>
         

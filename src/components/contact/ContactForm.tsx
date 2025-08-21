@@ -118,7 +118,9 @@ const ContactForm: React.FC = () => {
       
       <div>
         <Button type="submit" variant="primary" className="w-full md:w-auto">
+          <a href="/contact" className="flex items-center gap-2">
           Send Message
+          </a>
         </Button>
       </div>
     </form>

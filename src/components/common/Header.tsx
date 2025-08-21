@@ -67,7 +67,7 @@ const Header: React.FC = () => {
             <span className={`ml-2 sm:ml-3 text-xl sm:text-2xl font-bold group-hover:opacity-80 transition-all duration-200 ${
               scrolled ? 'text-green-600' : 'text-green-600'
             }`}>
-              WattWay
+              ENebula
             </span>
           </Link>
 
@@ -103,7 +103,9 @@ const Header: React.FC = () => {
                 <svg className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
+                <a href="/contact" className="flex items-center gap-2">
                 Get Started
+                </a>
               </span>
             </Button>
           </nav>
