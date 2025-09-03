@@ -45,10 +45,10 @@ const Footer: React.FC = () => {
   ];
 
   const chargingStations = [
-    { location: 'Downtown Kigali', status: 'online', count: 8 },
-    { location: 'Kigali Airport', status: 'online', count: 12 },
-    { location: 'Kimironko', status: 'maintenance', count: 4 },
-    { location: 'Nyarutarama', status: 'online', count: 6 }
+    { location: 'Norrsken Kigali', status: 'online', count: 1 },
+    { location: 'Kigali Airport', status: 'Comming soon', count: 2 },
+    { location: 'Kimironko', status: 'Comming soon', count: 2 },
+    { location: 'Nyarutarama', status: 'Comming soon', count: 1 }
   ];
 
   return (
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-3xl font-bold bg-gradient-to-r from-gray-400 to-gray-500 bg-clip-text text-transparent">
-                  ENebula
+                  Enebula
                 </h3>
                 <p className="text-xs text-gray-400">Powering Tomorrow's Journey</p>
               </div>
@@ -210,7 +210,7 @@ const Footer: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   <address className="text-gray-300 not-italic">
-                    <p className="font-medium">Headquarters</p>
+                    <p className="font-medium">Norrsken House</p>
                     <p className="text-sm">Kigali, Rwanda</p>
                   </address>
                 </div>
@@ -250,7 +250,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
               <p className="text-gray-400 text-sm">
-                &copy; {new Date().getFullYear()} ENebula. All rights reserved.
+                &copy; {new Date().getFullYear()} Enebula. All rights reserved.
               </p>
               <div className="flex items-center space-x-2">
                 <div className="flex items-center space-x-1">

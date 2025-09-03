@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
           
           {/* Fallback background if video doesn't load */}
           {!videoLoaded && (
-            <div className="w-full h-full bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900"></div>
+            <div className="w-full h-full bg-gradient-to-br from-slate-900 via-[#0b1d3a]-900 to-purple-900"></div>
           )}
         </div>
         
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
 
       {/* Moving gradient overlay - reduced opacity */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 via-purple-600/30 to-green-600/30 animate-gradient-x"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0b1d3a]-600/30 via-purple-600/30 to-green-600/30 animate-gradient-x"></div>
       </div>
 
       {/* Floating particles animation - reduced opacity */}
@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
           <div
             key={i}
             className={`absolute rounded-full opacity-30 ${
-              i % 3 === 0 ? 'bg-blue-400' : i % 3 === 1 ? 'bg-green-400' : 'bg-purple-400'
+              i % 3 === 0 ? 'bg-[#0b1d3a]-400' : i % 3 === 1 ? 'bg-green-400' : 'bg-purple-400'
             } ${
               i % 4 === 0 ? 'w-1 h-1' : i % 4 === 1 ? 'w-2 h-2' : i % 4 === 2 ? 'w-3 h-3' : 'w-1.5 h-1.5'
             }`}
@@ -119,8 +119,8 @@ const Hero: React.FC = () => {
           <h1 className={`text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4 sm:mb-6 transform transition-all duration-1000 delay-300 drop-shadow-2xl ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
-            ENebula, Powering the{' '}
-            <span className="text-green-200 bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 bg-clip-text animate-gradient-x inline-block min-w-fit">
+            Enebula, Powering the{' '}
+            <span className="text-green-200 bg-gradient-to-r from-[#0b1d3a]-400 via-purple-400 to-green-400 bg-clip-text animate-gradient-x inline-block min-w-fit">
               <span className="animate-pulse">{words[currentWord]}</span>
             </span>
             <br />of your drive
@@ -130,14 +130,14 @@ const Hero: React.FC = () => {
           <p className={`text-base sm:text-lg text-gray-100 mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed transform transition-all duration-1000 delay-500 drop-shadow-lg ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
-            From selling and installing EV chargers to full industry consulting and charging station implementation, ENebula is your trusted EV solutions partner.
+            From selling and installing EV chargers to full industry consulting and charging station implementation, Enebula is your trusted EV solutions partner.
           </p>
 
           {/* Action buttons - reduced button size */}
           <div className={`flex flex-col sm:flex-row flex-wrap justify-center gap-4 transform transition-all duration-1000 delay-700 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
-            <Button 
+            {/* <Button 
               variant="primary" 
               size="md" 
               className="w-full sm:w-auto group hover:scale-105 transition-all duration-300 hover:shadow-green-600/25"
@@ -150,7 +150,7 @@ const Hero: React.FC = () => {
                 Shop Chargers
               </span>
               </a>
-            </Button>
+            </Button> */}
             
             <Button 
               variant="outline" 
@@ -159,7 +159,7 @@ const Hero: React.FC = () => {
             >
               <a href="/contact" className="flex items-center justify-center sm:justify-start text-sm">
               <span className="flex items-center justify-center sm:justify-start text-sm">
-                <svg className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
                 Book Installation
@@ -167,7 +167,7 @@ const Hero: React.FC = () => {
               </a>
             </Button>
             
-            <Button 
+            {/* <Button 
               variant="secondary" 
               size="md" 
               className="w-full sm:w-auto hover:scale-105 transition-all duration-300 group shadow-2xl"
@@ -180,11 +180,11 @@ const Hero: React.FC = () => {
                 Get a Consultation
               </span>
               </a>
-            </Button>
+            </Button> */}
           </div>
 
           {/* Stats section - reduced text size */}
-          <div className={`mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 transform transition-all duration-1000 delay-1000 ${
+          {/* <div className={`mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 transform transition-all duration-1000 delay-1000 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             <div className="text-center group hover:scale-110 transition-all duration-300 p-4 rounded-lg backdrop-blur-sm bg-white/5 hover:bg-white/10">
@@ -199,7 +199,7 @@ const Hero: React.FC = () => {
               <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-transparent bg-gradient-to-r from-green-400 to-green-400 bg-clip-text mb-2 group-hover:animate-pulse">99%</div>
               <div className="text-sm sm:text-base text-gray-200 font-medium">Uptime Guarantee</div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

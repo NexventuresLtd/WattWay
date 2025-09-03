@@ -16,13 +16,13 @@ export const SERVICES: Service[] = [
   {
     id: 'selling',
     title: 'Selling Chargers',
-    description: 'Whether you need a compact home charger or a powerful commercial unit, ENebula supplies quality chargers with the latest features — from Wi-Fi control to RFID access.',
+    description: 'Whether you need a compact home charger or a powerful commercial unit, Enebula supplies quality chargers with the latest features — from Wi-Fi control to RFID access.',
     image: 'https://www.hjlcharger.com/uploadfile/202307/3799b225414b.jpg'
   },
   {
     id: 'consultation',
     title: 'EV Industry Consultation',
-    description: 'ENebula offers expert consulting services across the electric vehicle sector — helping you make informed, future-ready decisions.',
+    description: 'Enebula offers expert consulting services across the electric vehicle sector — helping you make informed, future-ready decisions.',
     features: [
       'EV adoption strategies',
       'Fleet electrification planning',
@@ -36,7 +36,7 @@ export const SERVICES: Service[] = [
   {
     id: 'design',
     title: 'Charging Station Design & Implementation',
-    description: 'From small private setups to large public charging hubs, ENebula provides comprehensive design and implementation services.',
+    description: 'From small private setups to large public charging hubs, Enebula provides comprehensive design and implementation services.',
     process: [
       'Site survey & feasibility study',
       'Charging point layout planning',
@@ -117,7 +117,7 @@ export const PRODUCTS: Product[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 't1',
-    quote: 'ENebula guided our company through the transition to electric vehicles — from selecting the right chargers to planning an entire charging hub.',
+    quote: 'Enebula guided our company through the transition to electric vehicles — from selecting the right chargers to planning an entire charging hub.',
     author: 'Joseph M.',
     position: 'Kigali'
   },

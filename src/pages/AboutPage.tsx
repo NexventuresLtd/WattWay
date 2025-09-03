@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => {
               </div>
               
               <h1 className="text-5xl font-bold mb-6 tracking-tight animate-fade-in-up">
-                About ENebula
+                About Enebula
               </h1>
               <p className="text-xl max-w-3xl mx-auto leading-relaxed animate-fade-in-up delay-200">
                 Powering the future of transportation with accessible, sustainable EV solutions across East Africa.
@@ -52,7 +52,7 @@ const AboutPage: React.FC = () => {
                         </svg>
                       </div>
                       <p>
-                        At ENebula, we believe the future of transportation is electric — and accessible to everyone.
+                        At Enebula, we believe the future of transportation is electric — and accessible to everyone.
                       </p>
                     </div>
                   </div>
@@ -79,7 +79,7 @@ const AboutPage: React.FC = () => {
                         </svg>
                       </div>
                       <p>
-                        Founded in 2020, ENebula has grown from a small startup to a leading provider of EV infrastructure solutions in East Africa. Our team of certified professionals brings together expertise in electrical engineering, renewable energy, and transportation planning.
+                        Founded in 2020, Enebula has grown from a small startup to a leading provider of EV infrastructure solutions in East Africa. Our team of certified professionals brings together expertise in electrical engineering, renewable energy, and transportation planning.
                       </p>
                     </div>
                   </div>
@@ -151,7 +151,7 @@ const AboutPage: React.FC = () => {
               <h2 className="text-4xl font-bold mb-6 text-green-600 tracking-tight">Meet Our Team</h2>
               <div className="w-24 h-1 bg-gray-600 mx-auto mb-8 transform transition-all duration-500 hover:w-32"></div>
               <p className="text-gray-700 max-w-3xl mx-auto mb-12 text-lg leading-relaxed">
-                ENebula is powered by a diverse team of EV specialists, engineers, and sustainability experts committed to advancing clean transportation across Africa.
+                Enebula is powered by a diverse team of EV specialists, engineers, and sustainability experts committed to advancing clean transportation across Africa.
               </p>
             </div>
             

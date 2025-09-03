@@ -54,7 +54,7 @@ const WhyChooseUs: React.FC = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-900 via-green-600 to-green-500 bg-clip-text text-transparent mb-6">
-              Why Choose ENebula?
+              Why Choose Enebula?
             </h2>
             
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

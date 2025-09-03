@@ -14,164 +14,142 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Prevent body scrolling when mobile menu is open
   useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    
+    document.body.style.overflow = isMenuOpen ? 'hidden' : 'unset';
     return () => {
       document.body.style.overflow = 'unset';
     };
   }, [isMenuOpen]);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   const navItems = [
-    { name: 'Home', path: '/'},
-    { name: 'Services', path: '/services'},
-    { name: 'Products', path: '/products'},
-    { name: 'About', path: '/about'},
-    { name: 'Contact', path: '/contact'},
-    { name: 'FAQ', path: '/faq'}
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services' },
+    { name: 'Products', path: '/products' },
+    { name: 'Contact', path: '/contact' },
+    { name: 'FAQ', path: '/faq' },
   ];
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${
-      scrolled 
-        ? 'bg-white backdrop-blur-lg  border-b border-gray-100' 
-        : 'bg-transparent backdrop-blur-md border-b border-white/20'
-    }`}>
-      <div className="container mx-auto px-4 sm:px-6 py-2 sm:py-1">
-        <div className="flex justify-between items-center">
-          {/* Logo with animation */}
-          <Link to="/" className="flex items-center group">
-            <div className="relative">
-              <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center group-hover:scale-110 transform transition-all duration-200 ${
-                scrolled 
-                  ? 'bg-green-600 group-hover:bg-green-600' 
-                  : 'bg-green-600 backdrop-blur-sm group-hover:bg-green-600'
-              }`}>
-                <svg className={`w-5 h-5 sm:w-6 sm:h-6 group-hover:animate-pulse transition-colors duration-200 ${
-                  scrolled ? 'text-white' : 'text-white'
-                }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <div className="absolute -top-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 bg-yellow-400 rounded-full animate-ping opacity-75"></div>
-            </div>
-            <span className={`ml-2 sm:ml-3 text-xl sm:text-2xl font-bold group-hover:opacity-80 transition-all duration-200 ${
-              scrolled ? 'text-green-600' : 'text-green-600'
-            }`}>
-              ENebula
-            </span>
-          </Link>
+    <header
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${
+        scrolled
+          ? 'bg-[#0b1d3a] backdrop-blur-lg border-b border-[#0b1d3a]-100'
+          : 'bg-[#0b1d3a] backdrop-blur-md border-b border-white/20'
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center">
+        {/* Logo */}
+        <Link to="/" className="flex items-center group">
+          <div className="relative flex-shrink-0">
+            <img
+              src="/enebulalogo.png"
+              alt="Logo"
+              className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain"
+            />
+            <div className="absolute -top-1 -right-1 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-yellow-400 rounded-full animate-ping opacity-75"></div>
+          </div>
+        </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex space-x-1 items-center">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className={`relative px-3 py-2 font-medium transition-all duration-200 rounded-lg group text-sm xl:text-base ${
-                  scrolled 
-                    ? 'text-gray-700 hover:text-gray-600 hover:bg-gray-50' 
-                    : 'text-white hover:text-gray-200 hover:bg-white/10 drop-shadow-sm'
-                }`}
-              >
-                <span className="flex items-center space-x-2">
-                  <span className="opacity-60 group-hover:opacity-100"></span>
-                  <span>{item.name}</span>
-                </span>
-                <div className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 group-hover:w-4/5 transition-all duration-300 ${
-                  scrolled ? 'bg-gray-500' : 'bg-white'
-                }`}></div>
-              </Link>
-            ))}
-            <Button 
-              variant="primary" 
-              size="sm" 
-              className={`ml-4 group hover:scale-105 transition-all duration-200 ${
-                scrolled ? 'bg-green-600 text-gray-900 hover:bg-green-600 shadow-lg' : 'bg-green-600 text-gray-900 hover:bg-green-600 shadow-lg'
+        {/* Desktop Navigation */}
+        <nav className="hidden lg:flex ml-auto space-x-2 items-center bg-[#0b1d3a]">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              className={`px-3 py-2 font-medium text-sm md:text-base rounded-lg transition-all duration-200 ${
+                scrolled
+                  ? 'text-gray-200 hover:text-white hover:bg-gray-800/50'
+                  : 'text-white hover:text-gray-200 hover:bg-white/10'
               }`}
             >
-              <span className="flex items-center">
-                <svg className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-                <a href="/contact" className="flex items-center gap-2">
-                Get Started
-                </a>
-              </span>
-            </Button>
-          </nav>
-
-          {/* Mobile Menu Button */}
-          <button
-            className={`lg:hidden p-2 rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 ${
-              scrolled 
-                ? 'hover:bg-gray-100 focus:ring-gray-500' 
-                : 'hover:bg-white/10 focus:ring-white/50'
-            }`}
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
-            aria-expanded={isMenuOpen}
+              {item.name}
+            </Link>
+          ))}
+          <Button
+            variant="primary"
+            size="sm"
+            className="ml-4 bg-green-600 text-white hover:bg-green-700 shadow-md rounded-lg px-4 py-2"
           >
-            <div className="relative w-6 h-6">
-              <span className={`absolute top-0 left-0 w-6 h-0.5 transition-all duration-300 ${
-                scrolled ? 'bg-gray-700' : 'bg-white'
-              } ${isMenuOpen ? 'rotate-45 top-2.5' : ''}`}></span>
-              <span className={`absolute top-2.5 left-0 w-6 h-0.5 transition-all duration-300 ${
-                scrolled ? 'bg-gray-700' : 'bg-white'
-              } ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-              <span className={`absolute top-5 left-0 w-6 h-0.5 transition-all duration-300 ${
-                scrolled ? 'bg-gray-700' : 'bg-white'
-              } ${isMenuOpen ? '-rotate-45 top-2.5' : ''}`}></span>
-            </div>
-          </button>
-        </div>
+            <Link to="/contact" className="flex items-center gap-2">
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+              Contact Us
+            </Link>
+          </Button>
+        </nav>
 
-        {/* Mobile Menu */}
-        <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+        {/* Mobile Menu Button */}
+        <button
+          className={`lg:hidden ml-auto p-2 rounded-lg focus:outline-none focus:ring-2 transition-all duration-200 ${
+            scrolled
+              ? 'hover:bg-gray-100 focus:ring-gray-500'
+              : 'hover:bg-white/10 focus:ring-white/50'
+          }`}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+          aria-expanded={isMenuOpen}
+        >
+          <div className="relative w-6 h-6">
+            <span
+              className={`absolute top-0 left-0 w-6 h-0.5 transition-all duration-300 ${
+                scrolled ? 'bg-gray-200' : 'bg-white'
+              } ${isMenuOpen ? 'rotate-45 top-2.5' : ''}`}
+            ></span>
+            <span
+              className={`absolute top-2.5 left-0 w-6 h-0.5 transition-all duration-300 ${
+                scrolled ? 'bg-gray-200' : 'bg-white'
+              } ${isMenuOpen ? 'opacity-0' : ''}`}
+            ></span>
+            <span
+              className={`absolute top-5 left-0 w-6 h-0.5 transition-all duration-300 ${
+                scrolled ? 'bg-gray-200' : 'bg-white'
+              } ${isMenuOpen ? '-rotate-45 top-2.5' : ''}`}
+            ></span>
+          </div>
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
           isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
-        }`}>
-          <nav className={`py-4 space-y-2 border-t mt-2 transition-all duration-300 ${
-            scrolled 
-              ? 'bg-white border-gray-200' 
-              : 'bg-white/95 backdrop-blur-md border-white/20'
-          }`}>
-            {navItems.map((item, index) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:text-gray-600 hover:bg-gray-50 font-medium rounded-lg transition-all duration-200 transform hover:translate-x-2"
-                style={{ transitionDelay: isMenuOpen ? `${index * 50}ms` : '0ms' }}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                <span>{item.name}</span>
-              </Link>
-            ))}
-            <div className="pt-4 px-4">
-              <Button 
-                variant="primary" 
-                size="sm" 
-                className="w-full group"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                <span className="flex items-center justify-center">
-                  <svg className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                  Get Started
-                </span>
-              </Button>
-            </div>
-          </nav>
-        </div>
+        }`}
+      >
+        <nav
+          className={`py-4 space-y-2 border-t transition-all duration-300 bg-[#0b1d3a]`}
+        >
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              className="block py-3 px-4 text-white hover:text-gray-200 hover:bg-white/10 font-medium rounded-lg transition-all duration-200"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {item.name}
+            </Link>
+          ))}
+          <div className="pt-4 px-4">
+            <Button
+              variant="primary"
+              size="sm"
+              className="w-full bg-green-600 text-white hover:bg-green-700 shadow-md rounded-lg"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Get Started
+            </Button>
+          </div>
+        </nav>
       </div>
     </header>
   );
