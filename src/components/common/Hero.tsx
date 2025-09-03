@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with video */}
-      <div className="absolute inset-0 bg-slate-900">
+      <div className="absolute inset-0 bg-[#0b1d3a]-900">
         <div className="absolute inset-0">
           <video 
             autoPlay 

@@ -9,7 +9,7 @@ const AboutPage: React.FC = () => {
       
       <main className="flex-grow">
         {/* Enhanced Hero Section */}
-        <section className="py-24 bg-gray-900 text-white relative overflow-hidden">
+        <section className="py-24 bg-[#0b1d3a] text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-electric-pattern opacity-20"></div>
           <div className="absolute top-0 left-0 w-full h-2 bg-gray-600"></div>
           
@@ -34,7 +34,13 @@ const AboutPage: React.FC = () => {
         {/* Enhanced Our Story Section */}
         <section className="py-20 bg-white relative">
           <div className="absolute inset-0 bg-dot-pattern opacity-5"></div>
-          
+                    {/* Animated Background Elements */}
+          <div className="absolute inset-0">
+            <div className="absolute top-10 left-10 w-20 h-20 bg-gray-500 rounded-full opacity-20 animate-pulse"></div>
+            <div className="absolute top-32 right-20 w-16 h-16 bg-gray-500 rounded-full opacity-20 animate-bounce"></div>
+            <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-purple-500 rounded-full opacity-20 animate-pulse delay-1000"></div>
+            <div className="absolute bottom-32 right-1/3 w-12 h-12 bg-yellow-500 rounded-full opacity-20 animate-bounce delay-500"></div>
+          </div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16">

@@ -64,7 +64,7 @@ const ServicesPage: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="absolute inset-0 bg-gray-900"></div>
+        <div className="absolute inset-0 bg-[#0b1d3a]"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
             className="text-center max-w-4xl mx-auto"
@@ -125,7 +125,7 @@ const ServicesPage: React.FC = () => {
                   transition: { duration: 0.3 },
                 }}
               >
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-slate-100 rounded-xl flex items-center justify-center mb-4 sm:mb-6 text-slate-700 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#0b1d3a]-100 rounded-xl flex items-center justify-center mb-4 sm:mb-6 text-slate-700 group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
                   {feature.icon}
                 </div>
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-slate-800">
@@ -189,7 +189,7 @@ const ServicesPage: React.FC = () => {
 
       {/* CTA Section */}
       <motion.section
-        className="py-16 sm:py-20 lg:py-24 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden"
+        className="py-16 sm:py-20 lg:py-24 bg-[#0b1d3a] text-white relative overflow-hidden"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}

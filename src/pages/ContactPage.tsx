@@ -37,7 +37,7 @@ const ContactPage: React.FC = () => {
       
       <main className="flex-grow">
         {/* Hero Section with Animation */}
-        <section className="relative bg-slate-900 text-white py-20 overflow-hidden">
+        <section className="relative bg-[#0b1d3a] text-white py-20 overflow-hidden">
           {/* Animated Background Elements */}
           <div className="absolute inset-0">
             <div className="absolute top-10 left-10 w-20 h-20 bg-gray-500 rounded-full opacity-20 animate-pulse"></div>
@@ -47,12 +47,12 @@ const ContactPage: React.FC = () => {
           </div>
           
           <div className={`container mx-auto px-4 text-center relative z-10 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <div className="inline-flex items-center bg-green-600 px-4 py-2 rounded-full text-sm font-medium mb-6 animate-pulse">
+            <div className="inline-flex items-center mt-6 bg-green-600 px-4 py-2 rounded-full text-sm font-medium mb-6 animate-pulse">
               <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-ping"></span>
               Available 24/7
             </div>
             
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-400 via-gray-500 to-gray-400 animate-pulse">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-800 via-gray-500 to-gray-400 animate-pulse">
               Contact Us
             </h1>
             
@@ -210,7 +210,7 @@ const ContactPage: React.FC = () => {
         </section>
 
         {/* Call-to-Action Section */}
-        <section className="py-16 bg-slate-900 text-white">
+        <section className="py-16 bg-[#0b1d3a]-900 text-white">
           <div className="container mx-auto px-4 text-center">
             <div className={`transform transition-all duration-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>

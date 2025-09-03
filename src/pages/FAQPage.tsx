@@ -22,9 +22,9 @@ const FAQPage: React.FC = () => {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-slate-900 text-white py-20 overflow-hidden">
+        <section className="relative bg-[#0b1d3a]-900 text-white py-20 overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1920&q=80')] bg-cover bg-center opacity-20"></div>
-          <div className="absolute inset-0 bg-slate-900/70"></div>
+          <div className="absolute inset-0 bg-[#0b1d3a]-900/70"></div>
           <div className="relative container mx-auto px-4 text-center">
             <div className="animate-fade-in-up">
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">

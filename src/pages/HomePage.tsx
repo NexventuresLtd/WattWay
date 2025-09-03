@@ -38,7 +38,7 @@ const HomePage: React.FC = () => {
         <Hero />
         
         {/* Enhanced Stats Section */}
-        <section className={`py-16 bg-gradient-to-r from-gray-800 to-gray-700 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+        <section className={`py-16 bg-[#0b1d3a] transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => {
@@ -71,7 +71,7 @@ const HomePage: React.FC = () => {
         <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">          
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-600 mb-4">
+              <h2 className="text-4xl font-bold text-[#0b1d3a] mb-4">
                 What Our <span className="text-green-600">Clients Say</span>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-gray-400 to-gray-600 mx-auto rounded-full"></div>
@@ -110,7 +110,7 @@ const HomePage: React.FC = () => {
           <div className="container mx-auto px-4 text-center relative z-10">
             <div className="max-w-4xl mx-auto">
               {/* Icon */}
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gray-900 bg-opacity-20 rounded-full mb-6 animate-pulse">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-[#0b1d3a] bg-opacity-20 rounded-full mb-6 animate-pulse">
                 <Zap className="w-10 h-10 text-white" />
               </div>
               

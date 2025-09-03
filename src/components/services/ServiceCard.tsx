@@ -42,11 +42,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
                   Process
                 </h3>
-                <div className="bg-slate-50 rounded-xl p-4 sm:p-6">
+                <div className="bg-[#0b1d3a]-50 rounded-xl p-4 sm:p-6">
                   <ol className="space-y-3">
                     {service.process.map((step: string, index: number) => (
                       <li key={index} className="flex items-start">
-                        <span className="flex-shrink-0 w-6 h-6 bg-slate-700 text-white text-sm font-semibold rounded-full flex items-center justify-center mr-3 mt-0.5">
+                        <span className="flex-shrink-0 w-6 h-6 bg-[#0b1d3a]-700 text-white text-sm font-semibold rounded-full flex items-center justify-center mr-3 mt-0.5">
                           {index + 1}
                         </span>
                         <span className="text-slate-700 text-sm sm:text-base leading-relaxed">

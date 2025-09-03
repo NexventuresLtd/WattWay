@@ -56,12 +56,12 @@ const ProductsPage: React.FC = () => {
       
       {/* Hero Section */}
       <motion.section 
-        className="relative py-20 bg-slate-50"
+        className="relative py-20 bg-[#0b1d3a]-50"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="absolute inset-0 bg-gray-900"></div>
+        <div className="absolute inset-0 bg-[#0b1d3a]"></div>
         <div className="container mx-auto px-4 relative">
           <motion.div 
             className="text-center max-w-4xl mx-auto"
@@ -69,7 +69,7 @@ const ProductsPage: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-slate-200">
+            <h1 className="text-5xl md:text-6xl font-bold mt-4 mb-6 text-slate-200">
               Our <span className="text-green-600">Products</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-400 mb-8 leading-relaxed">
@@ -124,7 +124,7 @@ const ProductsPage: React.FC = () => {
               <div className="flex items-center gap-4">
                 {/* Filter Toggle */}
                 <motion.button
-                  className="flex items-center gap-2 px-4 py-3 border border-slate-300 rounded-xl hover:bg-slate-50 transition-colors duration-300"
+                  className="flex items-center gap-2 px-4 py-3 border border-slate-300 rounded-xl hover:bg-[#0b1d3a]-50 transition-colors duration-300"
                   onClick={() => setIsFilterOpen(!isFilterOpen)}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
@@ -136,7 +136,7 @@ const ProductsPage: React.FC = () => {
                 {/* View Mode Toggle */}
                 <div className="flex border border-slate-300 rounded-xl overflow-hidden">
                   <motion.button
-                    className={`p-3 ${viewMode === 'grid' ? 'bg-white text-white' : 'bg-white text-slate-600 hover:bg-slate-50'} transition-colors duration-300`}
+                    className={`p-3 ${viewMode === 'grid' ? 'bg-white text-white' : 'bg-white text-slate-600 hover:bg-[#0b1d3a]-50'} transition-colors duration-300`}
                     onClick={() => setViewMode('grid')}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
@@ -144,7 +144,7 @@ const ProductsPage: React.FC = () => {
                     <Grid className="w-5 h-5" />
                   </motion.button>
                   <motion.button
-                    className={`p-3 ${viewMode === 'list' ? 'bg-white-600 text-white' : 'bg-white text-slate-600 hover:bg-slate-50'} transition-colors duration-300`}
+                    className={`p-3 ${viewMode === 'list' ? 'bg-white-600 text-white' : 'bg-white text-slate-600 hover:bg-[#0b1d3a]-50'} transition-colors duration-300`}
                     onClick={() => setViewMode('list')}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
@@ -224,7 +224,7 @@ const ProductsPage: React.FC = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <div className="w-24 h-24 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-24 h-24 bg-[#0b1d3a]-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Search className="w-12 h-12 text-slate-400" />
                   </div>
                   <h3 className="text-xl font-semibold text-slate-900 mb-2">No products found</h3>
@@ -271,7 +271,7 @@ const ProductsPage: React.FC = () => {
 
       {/* Featured Section */}
       <motion.section 
-        className="py-16 bg-slate-50"
+        className="py-16 bg-[#0b1d3a]-50"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
