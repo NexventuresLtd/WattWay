@@ -23,6 +23,7 @@ const Header: React.FC = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Products', path: '/products' },
     { name: 'Contact', path: '/contact' },
