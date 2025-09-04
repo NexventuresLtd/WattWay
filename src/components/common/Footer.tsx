@@ -24,17 +24,17 @@ const Footer: React.FC = () => {
   }, []);
 
   const quickLinks = [
-    { name: 'Home', path: '/', icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6' },
-    { name: 'Services', path: '/services', icon: 'M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 7.172V5l-1-1z' },
-    { name: 'Products', path: '/products', icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M9 21h6m-6 0H3m6 0v-6' },
-    { name: 'About Us', path: '/about', icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' }
+    { name: 'Home', path: '/'},
+    { name: 'Services', path: '/services'},
+    { name: 'Products', path: '/products' },
+    { name: 'About Us', path: '/about' }
   ];
 
   const supportLinks = [
-    { name: 'Contact Us', path: '/contact', icon: 'M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z' },
-    { name: 'FAQs', path: '/faq', icon: 'M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z' },
-    { name: 'Privacy Policy', path: '/privacy', icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z' },
-    { name: 'Terms of Service', path: '/terms', icon: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' }
+    { name: 'Contact Us', path: '/contact',},
+    { name: 'FAQs', path: '/faq'},
+    { name: 'Privacy Policy', path: '/privacy' },
+    { name: 'Terms of Service', path: '/terms' }
   ];
 
   const socialLinks = [
@@ -45,10 +45,10 @@ const Footer: React.FC = () => {
   ];
 
   const chargingStations = [
-    { location: 'Norrsken Kigali', status: 'online', count: 1 },
+    { location: 'Norrsken Kigali', status: 'online', count: 2 },
     { location: 'Kigali Airport', status: 'Coming soon', count: 2 },
     { location: 'Kimironko', status: 'Coming soon', count: 2 },
-    { location: 'Nyarutarama', status: 'Coming soon', count: 1 }
+    { location: 'Nyarutarama', status: 'Coming soon', count: 3 }
   ];
 
   return (
@@ -106,11 +106,11 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="lg:col-span-2 space-y-4 relative flex flex-col items-start">
             <div className="relative">
-              <img 
-                src="/enebulalogo.png" 
-                alt="Logo" 
-                className="w-20 h-20 object-contain" 
-              />
+            <img
+              src="/enebula.png"
+              alt="Logo"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 ml-8 object-contain transform scale-200 sm:scale-150 md:scale-250"
+            />
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full animate-ping opacity-75"></div>
             </div>
             <p className="text-gray-300 leading-relaxed">
@@ -155,7 +155,7 @@ const Footer: React.FC = () => {
                     className="text-gray-300 hover:text-white transition-all duration-300 flex items-center space-x-3 hover:translate-x-2 group p-2 rounded-lg hover:bg-[#0b1d3a]/50"
                   >
                     <svg className="w-4 h-4 text-gray-400 group-hover:text-gray-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={link.icon} />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} />
                     </svg>
                     <span className="group-hover:font-medium transition-all">{link.name}</span>
                   </Link>
@@ -178,7 +178,7 @@ const Footer: React.FC = () => {
                     className="text-gray-300 hover:text-white transition-all duration-300 flex items-center space-x-3 hover:translate-x-2 group p-2 rounded-lg hover:bg-[#0b1d3a]/50"
                   >
                     <svg className="w-4 h-4 text-gray-400 group-hover:text-gray-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={link.icon} />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} />
                     </svg>
                     <span className="group-hover:font-medium transition-all">{link.name}</span>
                   </Link>

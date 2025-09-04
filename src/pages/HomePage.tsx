@@ -140,12 +140,6 @@ const HomePage: React.FC = () => {
               
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <button className="bg-green-600 text-gray-100 px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl">
-                  <a href="tel:+250787570975" className="flex items-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  Get Free Quote
-                  </a>
-                </button>
                 <button className="border-2 border-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 hover:text-gray-100 transform hover:scale-105 transition-all duration-300 backdrop-blur-sm">
                   <a href="/contact" className="flex items-center gap-2">
                   <Mail className="w-5 h-5" />

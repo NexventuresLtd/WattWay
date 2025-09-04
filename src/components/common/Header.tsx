@@ -43,9 +43,9 @@ const Header: React.FC = () => {
         <Link to="/" className="flex items-center group">
           <div className="relative flex-shrink-0">
             <img
-              src="/enebulalogo.png"
+              src="/enebula.png"
               alt="Logo"
-              className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 object-contain transform scale-200 sm:scale-150 md:scale-250"
             />
             <div className="absolute -top-1 -right-1 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-yellow-400 rounded-full animate-ping opacity-75"></div>
           </div>

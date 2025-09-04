@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with video */}
-      <div className="absolute inset-0 bg-[#0b1d3a]-900">
+      <div className="absolute inset-0 bg-[#0b1d3a]">
         <div className="absolute inset-0">
           <video 
             autoPlay 
@@ -112,11 +112,11 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Main content - increased z-index */}
-      <div className="container mx-auto px-4 sm:px-6 relative z-20 py-16">
-        <div className="max-w-4xl mx-auto text-center">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 py-1">
+        <div className="max-w-4xl">
 
           {/* Main heading with typing animation - reduced text size */}
-          <h1 className={`text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4 sm:mb-6 transform transition-all duration-1000 delay-300 drop-shadow-2xl ${
+          <h1 className={`text-lg xs:text-xl sm:text-2xl lg:text-3xl font-bold text-white leading-tight mb-1 sm:mb-2 transform transition-all duration-1000 delay-300 drop-shadow-2xl ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             Enebula, Powering the{' '}
@@ -127,14 +127,14 @@ const Hero: React.FC = () => {
           </h1>
 
           {/* Subtitle - reduced text size */}
-          <p className={`text-base sm:text-lg text-gray-100 mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed transform transition-all duration-1000 delay-500 drop-shadow-lg ${
+          <p className={`text-base sm:text-md text-gray-100 mb-8 sm:mb-10 max-w-3xl leading-relaxed transform transition-all duration-1000 delay-500 drop-shadow-lg ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             From selling and installing EV chargers to full industry consulting and charging station implementation, Enebula is your trusted EV solutions partner.
           </p>
 
           {/* Action buttons - reduced button size */}
-          <div className={`flex flex-col sm:flex-row flex-wrap justify-center gap-4 transform transition-all duration-1000 delay-700 ${
+          <div className={`flex flex-col sm:flex-row flex-wrap gap-4 transform transition-all duration-1000 delay-700 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             {/* <Button 
