@@ -45,10 +45,7 @@ const Footer: React.FC = () => {
   ];
 
   const chargingStations = [
-    { location: 'Norrsken Kigali', status: 'online', count: 2 },
-    { location: 'Kigali Airport', status: 'Coming soon', count: 2 },
-    { location: 'Kimironko', status: 'Coming soon', count: 2 },
-    { location: 'Nyarutarama', status: 'Coming soon', count: 3 }
+    { location: 'Norrsken Kigali', status: 'online', count: 1 },
   ];
 
   return (
@@ -87,9 +84,9 @@ const Footer: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {chargingStations.map((station) => (
-              <div key={station.location} className="bg-[#0b1d3a]/50 rounded-lg p-4 hover:bg-[#0b1d3a]/70 transition-all duration-300 hover:scale-105">
+              <div key={station.location} className="bg-[#0b1d3a]/50 rounded-lg p-4 hover:bg-[#0b1d3a]/70 transition-all duration-300 hover:scale-200">
                 <div className="flex items-center justify-between mb-2">
-                  <h5 className="font-medium text-sm">{station.location}</h5>
+                  <h5 className="font-large text-lg">{station.location}</h5>
                   <div className={`w-2 h-2 rounded-full ${
                     station.status === 'online' ? 'bg-gray-500 animate-pulse' : 
                     station.status === 'maintenance' ? 'bg-yellow-500 animate-pulse' : 'bg-red-500'
