@@ -130,7 +130,7 @@ const Hero: React.FC = () => {
           <p className={`text-base sm:text-md text-gray-100 mb-8 sm:mb-10 max-w-3xl leading-relaxed transform transition-all duration-1000 delay-500 drop-shadow-lg ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
-            From selling and installing EV chargers to full industry consulting and charging station implementation, Enebula is your trusted EV solutions partner.
+            From selling and installing EV chargers to full EV industry consulting and charging station implementation, Enebula is your trusted EV solutions partner.
           </p>
 
           {/* Action buttons - reduced button size */}

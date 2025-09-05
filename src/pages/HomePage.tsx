@@ -131,9 +131,9 @@ const HomePage: React.FC = () => {
                   </a>
                 </div>
                 <div className="flex items-center gap-3 text-gray-100 bg-green-600 bg-opacity-10 px-6 py-3 rounded-full backdrop-blur-sm">
-                  <a href="mailto:info@enebula.rw" className="flex items-center gap-2 text-gray-100 hover:text-gray-100 transition-colors">
+                  <a href="mailto:info@enebularw.com" className="flex items-center gap-2 text-gray-100 hover:text-gray-100 transition-colors">
                   <Mail className="w-5 h-5" />
-                  <span className="font-semibold">info@enebula.rw</span>
+                  <span className="font-semibold">info@enebularw.com</span>
                 </a>
                 </div>
               </div>

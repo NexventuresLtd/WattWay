@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {chargingStations.map((station) => (
-              <div key={station.location} className="bg-[#0b1d3a]/50 rounded-lg p-4 hover:bg-[#0b1d3a]/70 transition-all duration-300 hover:scale-200">
+              <div key={station.location} className="bg-[#0b1d3a]/50 rounded-lg p-4 hover:bg-[#0b1d3a]/70 duration-300 hover:scale-100">
                 <div className="flex items-center justify-between mb-2">
                   <h5 className="font-large text-lg">{station.location}</h5>
                   <div className={`w-2 h-2 rounded-full ${
@@ -223,8 +223,8 @@ const Footer: React.FC = () => {
                   </svg>
                   <div>
                     <p className="text-gray-300 font-medium">Email Us</p>
-                    <a href="mailto:info@enebula.rw" className="text-gray-300 hover:text-gray-400 transition-colors duration-200 text-sm">
-                      info@enebula.rw
+                    <a href="mailto:info@enebularw.com" className="text-gray-300 hover:text-gray-400 transition-colors duration-200 text-sm">
+                      info@enebularw.com
                     </a>
                   </div>
                 </div>

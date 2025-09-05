@@ -98,20 +98,15 @@ const WhyChooseUs: React.FC = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center mt-16">
+          {/* <div className="text-center mt-16">
             <div className="inline-flex flex-col sm:flex-row gap-4 items-center">
               <button className="px-8 py-4 bg-gradient-to-r from-green-600 to-green-600 text-white font-semibold rounded-xl  hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-green-600">
                 <a href="tel:+250787570975" className="flex items-center gap-2">
                 Get Started Today
                 </a>
               </button>
-              <button className="px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-green-600 hover:text-green-600 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-gray-200">
-                <a href="/contact" className="flex items-center gap-2">
-                Learn More
-                </a>
-              </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
