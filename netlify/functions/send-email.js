@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 exports.handler = async (event) => {
   const { name, email, phone, service, message } = JSON.parse(event.body);
 
-  const transporter = nodemailer.createTransporter({
+  const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: 587,
     secure: false,
